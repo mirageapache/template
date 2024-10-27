@@ -1,0 +1,83 @@
+/* 基本設置，將 margin、padding、box-sizing 等清除 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 清除列表樣式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 清除表格相關預設樣式 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 調整表單元素 */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 繼承父元素字體 */
+  margin: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  appearance: none;
+}
+
+/* 設置圖片和影片等媒體元素的寬高自適應 */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 移除超連結的預設樣式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 設置 iframe、object、embed 的邊距清除 */
+iframe,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* 設置表格邊界和空間 */
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* 設置 `strong` 元素的 font-weight */
+strong {
+  font-weight: bold;
+}
+
+/* 清除 blockquote 和 q 的引用符號 */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}

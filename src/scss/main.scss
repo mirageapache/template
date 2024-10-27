@@ -1,0 +1,42 @@
+@import "./reset";
+@import "./variables";
+
+/* 設置 html 和 body 的基本樣式 */
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+
+  header {
+    height: 50px;
+    background-color: $gray-light;
+
+    nav {
+      height: inherit;
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .brand:hover {
+        color: $info-color;
+      }
+    }
+  }
+
+  .section-one {
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: $secondary-color;
+    }
+  }
+}
+
